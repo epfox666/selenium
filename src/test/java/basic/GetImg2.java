@@ -16,7 +16,7 @@ public class GetImg2 {
     driver.get("https://www.baidu.com");
 
     File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-      FileUtils.copyFile(srcFile,new File("d:\\screenshot.png"));
+      FileUtils.copyFile(srcFile,new File("d:\\screenshot1.png"));
 
     driver.quit();
   }

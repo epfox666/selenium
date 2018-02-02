@@ -15,6 +15,6 @@ public class Mouse2 {
 		WebElement news = driver.findElement(By.name("tj_trnews"));
 		WebElement text = driver.findElement(By.id("kw"));
 		action.dragAndDrop(news, text).perform();  //拖拽A到B
-		action.release().perform();  //释放鼠标
+	//	action.release().perform();  //释放鼠标
 	}
 }

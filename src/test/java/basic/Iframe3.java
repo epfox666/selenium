@@ -1,4 +1,4 @@
-package test;
+package basic;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Iframe2  {
+public class Iframe3  {
 
   public static void main(String[] args) throws InterruptedException {
 

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;  
 import org.openqa.selenium.chrome.ChromeDriver;  
   
-public class ElementOpration4 {  
+public class TimeOut04 {  
     public static void main(String[] args) throws Exception {    
           
         WebDriver driver = new ChromeDriver();    

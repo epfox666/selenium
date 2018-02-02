@@ -14,9 +14,10 @@ public class GetImg {
 
     WebDriver driver = new ChromeDriver();
     driver.get("https://www.baidu.com");
-
+   //调用截图方法
     File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     try {
+    	//拷贝截图文件到制定目录
       FileUtils.copyFile(srcFile,new File("d:\\screenshot.png"));
     } catch (IOException e) {
       e.printStackTrace();
