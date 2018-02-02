@@ -1,4 +1,4 @@
-package basic;
+package test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,17 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MailLogin  {
+public class Iframe2  {
 
   public static void main(String[] args) throws InterruptedException {
 
     WebDriver driver = new ChromeDriver();
- //   driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+   driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
     driver.get("http://www.126.com");
     Thread.sleep(2000);
-    WebElement xf = driver.findElement(By.xpath("//*[@id='loginDiv']/iframe"));
+ //   WebElement xf = driver.findElement(By.xpath("//*[@id='loginDiv']/iframe"));
  
-    driver.switchTo().frame(xf);
+  //  driver.switchTo().frame(xf);
+    driver.switchTo().frame("x-URS-iframe");
     driver.findElement(By.name("email")).clear();
     driver.findElement(By.name("email")).sendKeys("username");
     driver.findElement(By.name("password")).clear();
