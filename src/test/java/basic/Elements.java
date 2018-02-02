@@ -36,6 +36,6 @@ public class Elements {
     WebElement text = search_result.get(search_result.size() - 10);
     System.out.println(text.getText());
 
-    driver.quit();
+   // driver.quit();
   }
 }
